@@ -36,7 +36,8 @@ So "CC" is coded as: 0 0 00 0000 0 000 00 0000 0 00
 
 Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of the 2D puzzle array, with the value 0 representing an unknown square.
 The Sudokus tested against your function will be "easy" (i.e. determinable; there will be no need to assume and test possibilities on unknowns) and can be solved with a brute-force approach.
-For Sudoku rules, see the [Wikipedia article](https://en.wikipedia.org/wiki/Sudoku).
+For Sudoku rules, see the [Wikipedia article](https://en.wikipedia.org/wiki/Sudoku){:target="_blank"}.
+
 ```
 puzzle = [[5,3,0,0,7,0,0,0,0],
           [6,0,0,1,9,5,0,0,0],
