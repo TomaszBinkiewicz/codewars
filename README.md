@@ -1,4 +1,5 @@
 # Content
+In this repository you can find some of my solutions to kata from [codewars](https://www.codewars.com).
 
 * [Unary messages](#unary-messages)
 * [Sudoku solver](#sudoku-solver)
@@ -68,3 +69,9 @@ Should return:
   [2,8,7,4,1,9,6,3,5],
   [3,4,5,2,8,6,1,7,9]]
 ```
+
+---
+---
+#### My current rank
+
+<img src="https://www.codewars.com/users/b_t_y/badges/micro" alt="loading error">
