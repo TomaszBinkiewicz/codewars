@@ -1,5 +1,6 @@
 # Content
-In this repository you can find some of my solutions to kata from [<img width="50" src="https://raw.githubusercontent.com/Codewars/codewars.com/master/docs/assets/img/logo.png" alt="codewors">](https://www.codewars.com)
+In this repository you can find some of my solutions to kata from
+[<img width="50" src="https://raw.githubusercontent.com/Codewars/codewars.com/master/docs/assets/img/logo.png" alt="codewors">](https://www.codewars.com)
 
 * [Unary messages](#unary-messages)
 * [Sudoku solver](#sudoku-solver)
@@ -12,7 +13,8 @@ In this repository you can find some of my solutions to kata from [<img width="5
 [Link to kata](https://www.codewars.com/kata/5e5ccbda30e9d0001ec77bb6)
 
 ### Description
-Binary with 0 and 1 is good, but binary with only 0 is even better! Originally, this is a concept designed by Chuck Norris to send so called unary messages.
+Binary with 0 and 1 is good, but binary with only 0 is even better! Originally, this is a concept designed by Chuck
+Norris to send so called unary messages.
 
 Can you write a program that can send and receive this messages?
 
@@ -49,8 +51,10 @@ So "CC" is coded as: 0 0 00 0000 0 000 00 0000 0 00
 
 ### Description
 
-Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of the 2D puzzle array, with the value 0 representing an unknown square.
-The Sudokus tested against your function will be "easy" (i.e. determinable; there will be no need to assume and test possibilities on unknowns) and can be solved with a brute-force approach.
+Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of the 2D puzzle
+array, with the value 0 representing an unknown square.
+The Sudokus tested against your function will be "easy" (i.e. determinable; there will be no need to assume and test
+possibilities on unknowns) and can be solved with a brute-force approach.
 For Sudoku rules, see the [Wikipedia article](https://en.wikipedia.org/wiki/Sudoku).
 
 ##### Example
@@ -93,12 +97,14 @@ Should return:
 * He says that the product of a and b should be equal to the sum of all numbers in the sequence, excluding a and b.
 * Given a number n, could you tell me the numbers he excluded from the sequence?
 
-The function takes the parameter: n (n is always strictly greater than 0) and returns an array of the form: `[(a, b), ...]`
+The function takes the parameter: n (n is always strictly greater than 0) and returns an array of the form:
+`[(a, b), ...]`
 with all (a, b) which are the possible removed numbers in the sequence 1 to n.
 
 `[(a, b), ...]` will be sorted in increasing order of the "a".
 
-It happens that there are several possible (a, b). The function returns an empty array if no possible numbers are found which will prove that my friend has not told the truth!.
+It happens that there are several possible (a, b). The function returns an empty array if no possible numbers are found
+which will prove that my friend has not told the truth!.
 
 
 ##### Examples
@@ -116,9 +122,11 @@ removNb(100) should return []
 
 ### Description
 
-Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds,
+in a human-friendly way.
 
-The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is 
+expressed as a combination of years, days, hours, minutes and seconds.
 
 For the purpose of this Kata, a year is 365 days and a day is 24 hours.
 
@@ -126,12 +134,18 @@ Note that spaces are important.
 
 ### Rules 
 
-* The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1.
-* The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", just like it would be written in English.
-* A more significant units of time will occur before than a least significant one. Therefore, 1 second and 1 year is not correct, but 1 year and 1 second is.
+* The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of
+  the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1.
+* The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", 
+  just like it would be written in English.
+* A more significant units of time will occur before than a least significant one. Therefore, 1 second and 1 year is not
+  correct, but 1 year and 1 second is.
 * Different components have different unit of times. So there is not repeated units like in 5 seconds and 1 second.
-* A component will not appear at all if its value happens to be zero. Hence, 1 minute and 0 seconds is not valid, but it should be just 1 minute.
-* A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
+* A component will not appear at all if its value happens to be zero. Hence, 1 minute and 0 seconds is not valid, but it
+  should be just 1 minute.
+* A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 
+  minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid 
+  more significant unit of time.
 
 ##### Examples
 
@@ -141,6 +155,56 @@ format_duration(62)    # returns "1 minute and 2 seconds"
 ```
 format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
+
+
+
+
+
+
+
+## Snakes and ladders
+
+**Rank: 4 kyu**
+[Link to kata](https://www.codewars.com/kata/587136ba2eefcb92a9000027)
+
+### Description
+
+Snakes and Ladders is an ancient Indian board game regarded today as a worldwide classic. It is played between two or 
+more players on a gameboard having numbered, gridded squares. A number of "ladders" and "snakes" are pictured on the 
+board, each connecting two specific board squares. (Source [Wikipedia](https://en.wikipedia.org/wiki/Snakes_and_Ladders)) 
+
+Your task is to make a simple class called SnakesLadders. The test cases will call the method play(die1, die2) 
+independantly of the state of the game or the player turn. The variables die1 and die2 are the die thrown in a turn and 
+are both integers between 1 and 6. The player will move the sum of die1 and die2.
+
+### The board
+
+<img src="https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/snakesandladdersboard.jpg" alt="loading error" width="500">
+
+### Rules 
+
+* There are two players and both start off the board on square 0.
+* Player 1 starts and alternates with player 2.
+* You follow the numbers up the board in order 1=>100
+* If the value of both die are the same then that player will have another go.
+* Climb up ladders. The ladders on the game board allow you to move upwards and get ahead faster. If you land exactly 
+  on a square that shows an image of the bottom of a ladder, then you may move the player all the way up to the square
+  at the top of the ladder. (even if you roll a double).
+* Slide down snakes. Snakes move you back on the board because you have to slide down them. If you land exactly at the 
+  top of a snake, slide move the player all the way to the square at the bottom of the snake or chute 
+  (even if you roll a double).
+* Land exactly on the last square to win. The first person to reach the highest square on the board wins. But there's 
+  a twist! If you roll too high, your player "bounces" off the last square and moves back. You can only win by rolling 
+  the exact number needed to land on the last square. For example, if you are on square 98 and roll a five, move your 
+  game piece to 100 (two moves), then "bounce" back to 99, 98, 97 (three, four then five moves.)
+
+##### Returns
+
+`Player n is on square x`. Where n is the current player and x is the sqaure they are currently on.
+
+`Player n Wins!` where n is winning player that has landed on square 100 without any remainding moves left.
+
+`Game over!` if a player has won and another player tries to play.
 
 ---
 ---
