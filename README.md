@@ -1,10 +1,16 @@
+[<img src="https://raw.githubusercontent.com/Codewars/codewars.com/master/docs/assets/img/logo.png" alt="codewors logo">](https://www.codewars.com)
+
 # Content
 In this repository you can find some of my solutions to kata from [codewars](https://www.codewars.com).
 
 * [Unary messages](#unary-messages)
 * [Sudoku solver](#sudoku-solver)
+* [Is my friend cheating?](#is-my-friend-cheating)
 
 ## Unary messages
+
+**Rank: 6 kyu**
+[Link to kata](https://www.codewars.com/kata/5e5ccbda30e9d0001ec77bb6)
 
 Binary with 0 and 1 is good, but binary with only 0 is even better! Originally, this is a concept designed by Chuck Norris to send so called unary messages.
 
@@ -38,6 +44,9 @@ So "CC" is coded as: 0 0 00 0000 0 000 00 0000 0 00
 
 ## Sudoku solver
 
+**Rank: 3 kyu**
+[Link to kata](https://www.codewars.com/kata/5296bc77afba8baa690002d7)
+
 Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of the 2D puzzle array, with the value 0 representing an unknown square.
 The Sudokus tested against your function will be "easy" (i.e. determinable; there will be no need to assume and test possibilities on unknowns) and can be solved with a brute-force approach.
 For Sudoku rules, see the [Wikipedia article](https://en.wikipedia.org/wiki/Sudoku).
@@ -68,6 +77,34 @@ Should return:
   [9,6,1,5,3,7,2,8,4],
   [2,8,7,4,1,9,6,3,5],
   [3,4,5,2,8,6,1,7,9]]
+```
+
+## Is my friend cheating?
+
+**Rank: 5 kyu**
+[Link to kata](https://www.codewars.com/kata/5547cc7dcad755e480000004)
+
+### Rules
+
+* A friend of mine takes a sequence of numbers from 1 to n (where n > 0).
+* Within that sequence, he chooses two numbers, a and b.
+* He says that the product of a and b should be equal to the sum of all numbers in the sequence, excluding a and b.
+* Given a number n, could you tell me the numbers he excluded from the sequence?
+
+The function takes the parameter: n (n is always strictly greater than 0) and returns an array of the form: `[(a, b), ...]`
+with all (a, b) which are the possible removed numbers in the sequence 1 to n.
+
+`[(a, b), ...]` will be sorted in increasing order of the "a".
+
+It happens that there are several possible (a, b). The function returns an empty array if no possible numbers are found which will prove that my friend has not told the truth!.
+
+
+##### Examples
+```
+removNb(26) should return [(15, 21), (21, 15)]
+```
+```
+removNb(100) should return []
 ```
 
 ---
