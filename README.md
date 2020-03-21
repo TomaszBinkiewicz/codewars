@@ -1,7 +1,5 @@
-[<img src="https://raw.githubusercontent.com/Codewars/codewars.com/master/docs/assets/img/logo.png" alt="codewors logo">](https://www.codewars.com)
-
 # Content
-In this repository you can find some of my solutions to kata from [codewars](https://www.codewars.com).
+In this repository you can find some of my solutions to kata from [<img width="50" src="https://raw.githubusercontent.com/Codewars/codewars.com/master/docs/assets/img/logo.png" alt="codewors">](https://www.codewars.com)
 
 * [Unary messages](#unary-messages)
 * [Sudoku solver](#sudoku-solver)
