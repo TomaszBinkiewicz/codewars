@@ -4,12 +4,14 @@ In this repository you can find some of my solutions to kata from [<img width="5
 * [Unary messages](#unary-messages)
 * [Sudoku solver](#sudoku-solver)
 * [Is my friend cheating?](#is-my-friend-cheating)
+* [Human readable duration format](#human-readable-duration-format)
 
 ## Unary messages
 
 **Rank: 6 kyu**
 [Link to kata](https://www.codewars.com/kata/5e5ccbda30e9d0001ec77bb6)
 
+### Description
 Binary with 0 and 1 is good, but binary with only 0 is even better! Originally, this is a concept designed by Chuck Norris to send so called unary messages.
 
 Can you write a program that can send and receive this messages?
@@ -44,6 +46,8 @@ So "CC" is coded as: 0 0 00 0000 0 000 00 0000 0 00
 
 **Rank: 3 kyu**
 [Link to kata](https://www.codewars.com/kata/5296bc77afba8baa690002d7)
+
+### Description
 
 Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of the 2D puzzle array, with the value 0 representing an unknown square.
 The Sudokus tested against your function will be "easy" (i.e. determinable; there will be no need to assume and test possibilities on unknowns) and can be solved with a brute-force approach.
@@ -103,6 +107,39 @@ removNb(26) should return [(15, 21), (21, 15)]
 ```
 ```
 removNb(100) should return []
+```
+
+## Human readable duration format
+
+**Rank: 4 kyu**
+[Link to kata](https://www.codewars.com/kata/52742f58faf5485cae000b9a)
+
+### Description
+
+Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
+
+For the purpose of this Kata, a year is 365 days and a day is 24 hours.
+
+Note that spaces are important.
+
+### Rules 
+
+* The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1.
+* The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", just like it would be written in English.
+* A more significant units of time will occur before than a least significant one. Therefore, 1 second and 1 year is not correct, but 1 year and 1 second is.
+* Different components have different unit of times. So there is not repeated units like in 5 seconds and 1 second.
+* A component will not appear at all if its value happens to be zero. Hence, 1 minute and 0 seconds is not valid, but it should be just 1 minute.
+* A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
+
+##### Examples
+
+```
+format_duration(62)    # returns "1 minute and 2 seconds"
+```
+```
+format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
 
 ---
