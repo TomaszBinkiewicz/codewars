@@ -13,12 +13,12 @@ class SnakesLadders:
         if self.turn == "p_1":
             self.p_1_turn(die1, die2)
             if self.p_1_pos == 100:
-                print("Player 1 Wins!")
+                return "Player 1 Wins!"
             return f"Player 1 is on square {self.p_1_pos}"
         elif self.turn == "p_2":
             self.p_2_turn(die1, die2)
             if self.p_2_pos == 100:
-                print("Player 2 Wins!")
+                return "Player 2 Wins!"
             return f"Player 2 is on square {self.p_2_pos}"
 
     def p_1_turn(self, die1, die2):
