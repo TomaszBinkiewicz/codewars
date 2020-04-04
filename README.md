@@ -6,6 +6,7 @@ In this repository you can find some of my solutions to kata from
 * [Sudoku solver](#sudoku-solver)
 * [Is my friend cheating?](#is-my-friend-cheating)
 * [Human readable duration format](#human-readable-duration-format)
+* [Array exchange](#array-exchange)
 
 ## Unary messages
 > Unfinished
@@ -157,12 +158,6 @@ format_duration(62)    # returns "1 minute and 2 seconds"
 format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
 
-
-
-
-
-
-
 ## Snakes and ladders
 
 **Rank: 4 kyu**
@@ -206,6 +201,27 @@ are both integers between 1 and 6. The player will move the sum of die1 and die2
 `Player n Wins!` where n is winning player that has landed on square 100 without any remainding moves left.
 
 `Game over!` if a player has won and another player tries to play.
+
+# Array exchange
+
+**Rank: 6 kyu**
+[Link to kata](https://www.codewars.com/kata/5353212e5ee40d4694001114/python)
+
+### Description
+
+Exchange the elements of two arrays in-place in a way that their new content is also reversed.
+
+##### Examples
+
+```
+a = [1, 2, 3]
+b = ["a", "b", "c", "d"]
+
+exchange_with(a, b)
+
+# a should now be ["d", "c", "b", "a"]
+# b should now be [3, 2, 1]
+```
 
 ---
 ---
