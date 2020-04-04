@@ -8,6 +8,7 @@ In this repository you can find some of my solutions to kata from
 * [Human readable duration format](#human-readable-duration-format)
 
 ## Unary messages
+> Unfinished
 
 **Rank: 6 kyu**
 [Link to kata](https://www.codewars.com/kata/5e5ccbda30e9d0001ec77bb6)
