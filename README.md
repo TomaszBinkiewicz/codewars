@@ -7,6 +7,7 @@ In this repository you can find some of my solutions to kata from
 * [Is my friend cheating?](#is-my-friend-cheating)
 * [Human readable duration format](#human-readable-duration-format)
 * [Array exchange](#array-exchange)
+* [Rot13](#rot13)
 
 ## Unary messages
 > Unfinished
@@ -45,6 +46,8 @@ We want to encode the message "CC" (i.e. the 14 bits 10000111000011) :
 00 0000 - four 0
 0 00 - two 1
 So "CC" is coded as: 0 0 00 0000 0 000 00 0000 0 00
+
+[Back to the top](#content)
 
 ## Sudoku solver
 
@@ -87,6 +90,8 @@ Should return:
   [3,4,5,2,8,6,1,7,9]]
 ```
 
+[Back to the top](#content)
+
 ## Is my friend cheating?
 
 **Rank: 5 kyu**
@@ -116,6 +121,8 @@ removNb(26) should return [(15, 21), (21, 15)]
 ```
 removNb(100) should return []
 ```
+
+[Back to the top](#content)
 
 ## Human readable duration format
 
@@ -157,6 +164,8 @@ format_duration(62)    # returns "1 minute and 2 seconds"
 ```
 format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
+
+[Back to the top](#content)
 
 ## Snakes and ladders
 
@@ -202,6 +211,8 @@ are both integers between 1 and 6. The player will move the sum of die1 and die2
 
 `Game over!` if a player has won and another player tries to play.
 
+[Back to the top](#content)
+
 # Array exchange
 
 **Rank: 6 kyu**
@@ -222,6 +233,32 @@ exchange_with(a, b)
 # a should now be ["d", "c", "b", "a"]
 # b should now be [3, 2, 1]
 ```
+
+[Back to the top](#content)
+
+# Rot13
+
+**Rank: 5 kyu**
+[Link to kata](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
+
+### Description
+
+ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet.
+ROT13 is an example of the Caesar cipher.
+
+Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special
+characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet
+should be shifted, like in the original Rot13 "implementation".
+
+Please note that using `encode` is considered cheating.
+
+##### Examples
+
+```
+rot13('Test') # should return 'Grfg'
+```
+
+[Back to the top](#content)
 
 ---
 ---

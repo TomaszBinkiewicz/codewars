@@ -1,0 +1,28 @@
+from string import ascii_lowercase as ascii_l, ascii_uppercase as ascii_u
+
+
+def replace(char, collection):
+    start_i = collection.index(char)
+    end_i = start_i + 13
+    if end_i > len(collection) - 1:
+        end_i -= len(collection)
+    return collection[end_i]
+
+
+def rot13(message):
+    ret_str = ''
+    for char in message:
+        if char in ascii_l:
+            ret_str += replace(char, ascii_l)
+        elif char in ascii_u:
+            ret_str += replace(char, ascii_u)
+        else:
+            ret_str += char
+    return ret_str
+
+
+if __name__ == '__main__':
+    assert rot13('abcd') == 'nopq'
+    assert rot13('TeSt') == 'GrFg'
+    assert rot13('xYz') == 'kLm'
+    assert rot13('!/? 123') == '!/? 123'
